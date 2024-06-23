@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/pikachu.png" type="image/x-icon">
+    <title>Perfil e Tarefas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .centralizado {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        .tarefas .list-group-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .tarefa-texto {
+            flex: 1;
+            margin-left: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 menu-esquerdo">
+                <div class="text-center">
+                    <img src="assets/img/pikachu.png" class="rounded-circle" alt="Ícone" width="100">
+                    <h5 class="mt-2">Pikachu</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam! Vitae beatae soluta illum
+                        expedita! Ipsa et quam, quidem culpa rem laudantium perferendis! Repellat, fugit nam libero non
+                        quia odio?</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Link 1</a></li>
+                        <li class="list-group-item"><a href="#">Link 2</a></li>
+                        <li class="list-group-item"><a href="#">Link 3</a></li>
+                        <li class="list-group-item"><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 conteudo-principal">
+                <div class="caixa1">
+                    <h1>Lista de Tarefas</h1>
+                    <div class="tarefas">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width: 50%;">Dia</th>
+                                <th style="width: 50%;">Noite</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul id="tarefas-dia" class="list-group">
+                                        <li class="list-group-item"><span class="tarefa-texto">• Tarefa 1</span><button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 2</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 3</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 4</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 5</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 6</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 7</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 8</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 9</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 10</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+
+                                    </ul>
+                                    <form id="form-dia" class="centralizado mt-3">
+                                        <div class="form-group d-flex align-items-center justify-content-center">
+                                            <input type="text" id="nova-tarefa-dia" class="form-control mr-2"
+                                                placeholder="Nova tarefa">
+                                            <button type="button" class="btn btn-warning"
+                                                onclick="adicionarTarefa('dia')">Adicionar</button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <ul id="tarefas-noite" class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 1</span>
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button> <button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 2</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 3</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 4</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 5</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 6</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 7</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 8</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 9</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="tarefa-texto">• Tarefa 10</span>
+
+                                            <button class="btn btn-sm btn-success"
+                                                onclick="toggleConcluida(this)">✔️</button><button
+                                                class="btn btn-sm btn-dark ml-2" onclick="NaoConcluida(this)">❌</button>
+                                            <button class="btn btn-sm btn-danger ml-2"
+                                                onclick="removerTarefa(this)">Remover</button>
+                                        </li>
+                                    </ul>
+                                    <form id="form-noite" class="centralizado mt-3">
+                                        <div class="form-group d-flex align-items-center justify-content-center">
+                                            <input type="text" id="nova-tarefa-noite" class="form-control mr-2"
+                                                placeholder="Nova tarefa">
+                                            <button type="button" class="btn btn-warning"
+                                                onclick="adicionarTarefa('noite')">Adicionar</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-white py-3" id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-1"><strong>Criação de Layout</strong> - PUCRS, 2024 &copy; </p>
+                By <a href="https://www.linkedin.com/in/polliana-silva/" target="_blank" class="text-white font-weight-bold">Polliana Silva</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+body {
+    background-image: url('../img/pexels-pixabay-261763.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px;
+}
+
+.menu-esquerdo {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 100px;
+    max-width: 500px;
+}
+
+.menu-esquerdo img {
+    margin-bottom: 20px;
+}
+
+.menu-esquerdo ul {
+    padding-left: 0;
+}
+
+.menu-esquerdo .list-group-item {
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+
+.menu-esquerdo .list-group-item:hover {
+    background-color: #ffae009c;
+}
+
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+}
+
+.caixa1 {
+    padding: 20px;
+    border: 2px solid #ffb000;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.caixa1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tarefas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.tarefas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tarefas th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tarefas td {
+    vertical-align: top;
+}
+
+.tarefas .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+
+.tarefas .list-group-item:hover {
+    background-color: #ffae009c;
+}
+
+.tarefa-texto {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes button {
+    margin-left: 5px;
+}
+
+.list-group-item span {
+    text-decoration: none;
+}
+
+.list-group-item.concluida .tarefa-texto {
+    text-decoration: line-through;
+    color: #777;
+}
+
+
+footer#footer {
+    background-color: #ffae009c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative; 
+    z-index: 1; 
+}
+
+footer#footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer#footer a:hover {
+    text-decoration: underline;
+}
