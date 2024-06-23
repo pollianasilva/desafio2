@@ -1,6 +1,6 @@
 # Enunciado 2 - Exercício de Programação
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Montserrat&size=30&pause=1000&color=ff69b4&random=false&width=435&lines=Criação+de+Layout)](https://git.io/typing-svg)<br>
-![Aceleradora Ágil](https://img.shields.io/badge/Aceleradora%20Ágil-ff69b4?style=for-the-badge&logoColor=white) &nbsp;&nbsp;
+![Aceleradora Ágil](https://img.shields.io/badge/Aceleradora%20Ágil-ff69b4?style=for-the-badge&logoColor=white) 
 
 <br><br>
 HTML/CSS
@@ -36,10 +36,10 @@ FORAM UTILIZADOS:
 <img align="center" alt="Polly-bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"> 
 </div><br> 
 
-![/](https://img.shields.io/badge/%2F-ff1493?style=for-the-badge) ![thoughtworks](https://img.shields.io/badge/thoughtworks-1e3a5f?style=for-the-badge) &nbsp;&nbsp;
-![PucRS](https://img.shields.io/badge/PucRS-83d0f5?style=for-the-badge&logo=chipperci&logoColor=white) &nbsp;&nbsp;
-![Centro da Inovação da Escola Politécnica](https://img.shields.io/badge/Centro%20da%20Inovação%20da%20Escola%20Politécnica-4db8ff?style=for-the-badge) &nbsp;&nbsp;
-![Tecnopuc](https://img.shields.io/badge/Tecnopuc-808080?style=for-the-badge) &nbsp;&nbsp;
+![/](https://img.shields.io/badge/%2F-ff1493?style=for-the-badge) ![thoughtworks](https://img.shields.io/badge/thoughtworks-1e3a5f?style=for-the-badge) 
+![PucRS](https://img.shields.io/badge/PucRS-83d0f5?style=for-the-badge&logo=chipperci&logoColor=white) 
+![Centro da Inovação da Escola Politécnica](https://img.shields.io/badge/Centro%20da%20Inovação%20da%20Escola%20Politécnica-4db8ff?style=for-the-badge) 
+![Tecnopuc](https://img.shields.io/badge/Tecnopuc-808080?style=for-the-badge) 
 ![Rede Globo](https://img.shields.io/badge/Rede%20Globo-fd5e02?style=for-the-badge)
 
 
