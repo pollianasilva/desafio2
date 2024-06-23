@@ -2,7 +2,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Montserrat&size=30&pause=1000&color=ff69b4&random=false&width=435&lines=Criação+de+Layout)](https://git.io/typing-svg)<br>
 ![Aceleradora Ágil](https://img.shields.io/badge/Aceleradora%20Ágil-ff69b4?style=for-the-badge&logoColor=white) 
 
-HTML/CSS
+## HTML/CSS 
 
 1. Crie um layout de largura e altura variável de acordo com o conteúdo da página, dividido em duas regiões distintas (menu esquerdo e conteúdo principal).
 
@@ -25,7 +25,7 @@ Crie uma formatação para esse menu.
 - Para aprimorar a experiência do usuário, aplique um estilo personalizado ao layout, tornando-o mais agradável e intuitivo.
 - Deixe a lista de tarefas dinâmica com as funcionalidades de adição e remoção de tarefas. 
 
- DEPLOY: https://criacaodelayout.netlify.app
+DEPLOY: https://criacaodelayout.netlify.app
 <div style="display: inline_block" align = "center"><br>
 FORAM UTILIZADOS:
 <img align="center" alt="Polly-VS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">  
