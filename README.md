@@ -2,7 +2,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Montserrat&size=30&pause=1000&color=ff69b4&random=false&width=435&lines=Criação+de+Layout)](https://git.io/typing-svg)<br>
 ![Aceleradora Ágil](https://img.shields.io/badge/Aceleradora%20Ágil-ff69b4?style=for-the-badge&logoColor=white) 
 
-<br><br>
 HTML/CSS
 
 1. Crie um layout de largura e altura variável de acordo com o conteúdo da página, dividido em duas regiões distintas (menu esquerdo e conteúdo principal).
